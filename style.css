@@ -1,0 +1,357 @@
+
+body{
+    font-family: Montessor,Robot;
+}
+#image{
+    height: 570px;
+    width:100vw;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("images/port.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#image a{
+    float: left;
+    padding: 10px 50px;
+    color: white;
+}
+#image button{
+    float: right;
+     margin: 40px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 2px 40px;
+}
+#image h1{
+   position: absolute;
+    top: 160px;
+    left: 50%; 
+    transform: translate(-50%);
+    width: auto;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+#image p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: auto;
+    margin-top: 0px;
+    position: absolute;
+    top: 240px;
+    left:50%;  
+    transform: translate(-50%);
+    font-size: 22px;
+    color: #93A2B9;
+    letter-spacing: 4px;
+}
+.myPic{
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 250px;
+    border-radius: 50%;
+    border: 8px solid white;
+    z-index: 1;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+   background-color: aliceblue;
+    height: 550px;
+}
+
+/* Slides */
+.mySlides{
+  display: none;
+  padding: 80px;
+  text-align: justify;
+   height: 550px;
+}
+.mySlides h1{
+    color: #FC5E28;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.mySlides p{
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: azure;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+    background-color:gainsboro;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: gainsboro;
+  color: black;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(to right, #050F27, #1E273C);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color:lightgrey  ;
+}
+.btn{
+margin-left: 20px;
+color: white;
+}
+.btn i{
+    padding-left: 10px;
+    color: white;
+}
+#mySlides1{
+    background-image: linear-gradient(to right, #050F27, #1E273C);
+}
+#mySlides1 p{
+    color: white;
+}
+#mySlides2{
+    background-image: linear-gradient(to right, #050F27, #1E273C);
+}
+#mySlides2 h1{
+    color: #FC5E28;
+}
+#mySlides2 h2{
+    margin-top: 50px;
+    color: white;
+    font-weight: bold; 
+    font-size: 20px;
+}
+#mySlides2 p{
+    margin-top: 0px;
+    color: #C3C5CB;
+}
+#mySlides3{
+     background-image: linear-gradient(to right, #050F27, #1E273C);
+}
+#mySlides3 .btn{
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 50%;
+    margin-top: 50px;
+    background-image: radial-gradient(#940163, #D6196B, #3C0028);
+}
+#mySlides3 i{
+    font-size: 50px;
+    padding-left: 0px;
+    color: lightgrey;
+}
+#mySlides3 p{
+    margin-top: 0px;
+    font-size: 25px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+}
+#skills{
+   color: white;
+   background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url("images/pic.jpeg") ;
+    background-size: cover;
+    height: 800px;
+}
+.grid-container {
+  display: grid;
+  height: 600px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 200px 200px 200px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  line-height: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+  float: left;
+  width: 50%;
+
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#column1{
+    background-color: #050F27;  /*#3A4664*/
+    font-size: 30px;
+    text-align: center;
+    padding-top: 120px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+#border{
+    color: white;
+    margin: 55px auto;
+    width: 75%;
+    padding: 20px;
+    background-color:#A41655 /*#050F27#3D1053 */;
+    /*box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12);*/
+/*
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),0px 24px 38px 3px rgba(0, 0, 0, 0.14),0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    margin-top: 65px;
+*/
+    
+}
+#border:hover{
+/*    box-shadow: 64px 64px 24px 40px rgba(0,0,0,0.4),12px 12px 0px 18px rgba(0,0,0,0.4) inset;*/
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+#border a{
+    color: white;
+}
+#column2{
+    background-color:#050F27  /*#FC5E28 #C8477C*/;
+}
+#column2 a{
+    text-decoration: none;
+}
+
+#button{
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #050F27 /*#031321*/ ;
+}
+
+#button a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#button a:hover{
+    color: white;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+#button a span{
+    position: absolute;
+    display: block;
+}
+#button a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+#button a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+#button a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+#button a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#button a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+#button a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#button a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+#button a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+.footer{
+    text-align: center;
+    line-height: center;
+    background-color: lightgray;
+    padding: 15px;
+}
+.footer p{
+    margin: 0;
+}
